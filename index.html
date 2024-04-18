@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines and Gems Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 40px;">Mines and Gems Game</h1>
+        <div>
+            <label class="bet" for="betInput">Enter bet amount:</label>
+            <input type="number" id="betInput" placeholder="Enter amount">
+            <button id="placeBetBtn">Place Bet</button>
+            <span id="errorMessage" class="error-msg"></span>
+        </div>
+        <div id="balanceDisplay" class="balance">Balance: 100 tokens</div>
+        <div id="withdrawDisplay" class="withdraw">Withdraw Amount: 0 tokens</div>
+        <div class="game-board"></div>
+        <button id="withdrawBtn" class="withdraw-btn">Withdraw</button>
+        <div class="game-over game-over-animation" id="gameOverMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
